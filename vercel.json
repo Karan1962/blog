@@ -1,15 +1,15 @@
 {
-    "functions": { "api/**/*.js": { "runtime": "nodejs14" } },
-    "routes": [
-      { "handle": "filesystem" },
+    "version": 2,
+    "builds": [
       {
-        "src": "/server.js",
-        "dest": "/server.js"
-      },
+        "src": "server.js",
+        "use": "@now/node"
+      }
+    ],
+    "routes": [
       {
         "src": "/(.*)",
-        "dest": "/server.js"
+        "dest": "server.js"
       }
     ]
   }
-  
