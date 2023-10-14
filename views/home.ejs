@@ -1,6 +1,6 @@
 
 <%- include("header") -%>
-
+<div class="container">
 <h1>home</h1>
 <p><%=content%></p>
 
@@ -10,5 +10,6 @@
     <h1><%=arr.title %> </h1>
     <p><%=arr.compose.substring(0,100)+" ..."%> <a href="/<%=arr.compose%>">Read more</a></p>
 <% }) %>
+</div>
 
 <%- include("footer") -%>

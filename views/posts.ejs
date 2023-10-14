@@ -1,8 +1,9 @@
 <%- include("header") -%>
-
-<% arrs.forEach(function(arr){%>
-    <h1><%=arr.title %> </h1>
-    <p><%=arr.compose %></p>
-<% }) %>
+<div class="container">
+  <% arrs.forEach(function(arr){%>
+  <h1><%=arr.title %></h1>
+  <p><%=arr.compose %></p>
+  <% }) %>
+</div>
 
 <%- include("footer") -%>
