@@ -19,7 +19,8 @@ app.set("view engine", "ejs");
 app.set('views',__dirname+'/views');
 
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use("/public", express.static("public", { "extensions": ["css"] }));
+app.use(express.static("public", { "extensions": ["css"] }));
+
 
 app.get("/", function (req, res) {
   res.render("home", { content: homeStartingContent, arrs: arrs });
